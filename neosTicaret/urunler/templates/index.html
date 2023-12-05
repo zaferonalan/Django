@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anasayfa</title>
+  </head>
+
+  <body>
+    <h1>Anasayfa</h1>
+    {% for i in urunlerim %}
+    <h1>{{i.isim}}</h1>
+    <p>{{i.aciklama}}</p>
+    <small>{{i.fiyat}}</small>
+    {% endfor %}
+  </body>
+</html>
